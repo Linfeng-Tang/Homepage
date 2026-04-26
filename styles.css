@@ -373,10 +373,10 @@ html[lang="en"] .summary {
 }
 
 .paper-btn {
-  color: var(--blue-deeper);
-  background: linear-gradient(135deg, #f4f9ff, #edf5ff);
-  border: 1.5px solid var(--blue-line);
-  box-shadow: 0 10px 22px rgba(85, 119, 155, 0.11);
+  color: #3f3835;
+  background: linear-gradient(135deg, #fbfaf8, #f1eee9);
+  border: 1.5px solid rgba(33, 27, 25, 0.11);
+  box-shadow: 0 10px 22px rgba(98, 82, 77, 0.075);
 }
 
 .btn-blue {
@@ -414,10 +414,10 @@ html[lang="en"] .summary {
 }
 
 .paper-btn:hover {
-  color: #fffdfa;
-  background: linear-gradient(135deg, #92bae5, var(--blue-deep));
-  border-color: transparent;
-  box-shadow: 0 12px 24px rgba(85, 119, 155, 0.16);
+  color: var(--ink);
+  background: linear-gradient(135deg, #f1eee9, #e8e2dc);
+  border-color: rgba(33, 27, 25, 0.16);
+  box-shadow: 0 12px 24px rgba(98, 82, 77, 0.1);
 }
 
 .btn-blue:hover {
@@ -675,7 +675,7 @@ html[lang="en"] .summary {
   height: 21px;
   flex-basis: 21px;
   background-size: 21px 21px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='21' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10.5' fill='%23fff1c9'/%3E%3Cpath fill='%23d59a2f' d='M8 4.5h8v3.1h3.1v1.7a4.2 4.2 0 0 1-4.2 4.2 4.8 4.8 0 0 1-2 1.4v2.2h3.3v2H7.8v-2h3.3v-2.2a4.8 4.8 0 0 1-2-1.4 4.2 4.2 0 0 1-4.2-4.2V7.6H8V4.5Zm0 4.8H6.7a2.3 2.3 0 0 0 1.7 2.2A7.1 7.1 0 0 1 8 9.3Zm8 0c0 .8-.1 1.5-.4 2.2a2.3 2.3 0 0 0 1.7-2.2H16Z'/%3E%3Cpath fill='%23fff8df' d='M10.3 6.5h3.4l-.8 1.7 1.8.2-1.4 1.2.4 1.8-1.7-.9-1.7.9.4-1.8-1.4-1.2 1.8-.2-.8-1.7Z'/%3E%3Cpath fill='%23976f27' opacity='.2' d='M8 4.5h8v1.4H8zM7.8 17.1h8.4v2H7.8z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='21' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10.5' fill='%23fff1c9'/%3E%3Cpath fill='%23d59a2f' d='M5.2 8.2 9 11.1l3-5.2 3 5.2 3.8-2.9-1.4 8H6.6l-1.4-8Z'/%3E%3Cpath fill='%23b98222' d='M6.9 17.2h10.2v2H6.9z'/%3E%3Ccircle cx='12' cy='6' r='1.4' fill='%23e9b94e'/%3E%3Ccircle cx='5.3' cy='8.1' r='1.2' fill='%23e9b94e'/%3E%3Ccircle cx='18.7' cy='8.1' r='1.2' fill='%23e9b94e'/%3E%3Cpath fill='%23fff8df' opacity='.72' d='M9.2 13.4h5.6l-.5 1.3H9.7l-.5-1.3Z'/%3E%3C/svg%3E");
 }
 
 .pub-highlights .badge-note::before {
