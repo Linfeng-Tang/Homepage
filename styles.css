@@ -103,6 +103,18 @@ img { display: block; max-width: 100%; }
   box-shadow: 0 10px 22px rgba(166, 77, 89, 0.08);
 }
 
+.nav .lang-link {
+  color: var(--accent-deep);
+  background: rgba(255, 240, 242, 0.78);
+  border: 1px solid var(--rednote-line);
+}
+
+.nav .lang-link:hover {
+  color: #fffdfa;
+  background: linear-gradient(135deg, #de8791, var(--rednote-deep));
+  border-color: transparent;
+}
+
 .page-hero {
   padding: 28px 0 14px;
 }
@@ -238,6 +250,25 @@ h3 {
   border-radius: 26px;
   object-fit: cover;
   box-shadow: 0 16px 32px rgba(45, 30, 26, 0.16);
+}
+
+.portrait-affiliation {
+  display: grid;
+  gap: 7px;
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+.portrait-affiliation a,
+.portrait-affiliation span {
+  display: block;
+}
+
+.portrait-affiliation a:hover {
+  color: var(--accent-deep);
 }
 
 .en-name {
@@ -1060,6 +1091,12 @@ h3 {
 .pub-item.hidden {
   display: none;
 }
+
+.pub-highlights .badge-citation::before { content: "C"; }
+.pub-highlights .badge-hot::before { content: "H"; }
+.pub-highlights .badge-cited::before { content: "T"; }
+.pub-highlights .badge-award::before { content: "A"; }
+.pub-highlights .badge-note::before { content: "N"; }
 
 @media (max-width: 1100px) {
   .hero-home,
