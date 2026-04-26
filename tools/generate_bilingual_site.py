@@ -2,6 +2,7 @@ from pathlib import Path
 from html import escape
 
 ROOT = Path(__file__).resolve().parents[1]
+STYLE_VERSION = "20260426-icons"
 
 PAGES = [
     ("index.html", "about"),
@@ -332,7 +333,7 @@ def same_lang_href(filename, lang):
 
 
 def head(title, description, filename, lang):
-    css = asset("styles.css", lang)
+    css = f"{asset('styles.css', lang)}?v={STYLE_VERSION}"
     en_href = f"./en/{filename}" if lang == "zh" else f"./{filename}"
     zh_href = f"./{filename}" if lang == "zh" else f"../{filename}"
     html_lang = "zh-CN" if lang == "zh" else "en"
