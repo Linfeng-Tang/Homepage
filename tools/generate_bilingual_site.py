@@ -517,9 +517,9 @@ def page_home(lang):
         eyebrow = "Academic Homepage"
         h1 = "Linfeng Tang"
         en_name = ""
-        subtitle = "Hongyi Postdoctoral Fellow at Wuhan University - Advisor: Prof. Jiayi Ma"
+        subtitle = "Hongyi Postdoc at Wuhan University - Advisor: Prof. Jiayi Ma"
         summary = "I received my Ph.D. degree from the School of Electronic Information, Wuhan University in December 2025 and my B.S. degree from the School of Computer Science and Engineering, Central South University in June 2020. My research focuses on multi-source image fusion perception, including multi-modal image fusion, video fusion, image restoration, image matching, and semantics-aware image fusion. In the past five years, I have published 16 papers as first author, advisor-first-author, or co-first author, including 15 high-level papers in CAS Q1 journals, IEEE Transactions, and CCF-A venues. These papers include 6 ESI Hot Papers (top 0.1%) and 7 ESI Highly Cited Papers (top 1%). My Google Scholar citations exceed 6,900, with an h-index of 21; 3 papers have over 1,000 citations, and the highest-cited paper has 1,416 citations."
-        aff = ["School of Robotics", "Wuhan University", "Hongyi Postdoctoral Fellow", "Advisor: Prof. Jiayi Ma", "Wuhan, 430072, China"]
+        aff = ["School of Robotics", "Wuhan University", "Hongyi Postdoc", "Advisor: Prof. Jiayi Ma", "Wuhan, 430072, China"]
         chips = ["Multi-source Fusion Perception", "Image Fusion", "Image Restoration", "Semantic Perception"]
         actions = [("Google Scholar", "https://scholar.google.com/citations?user=PyRqpAsAAAAJ&hl=zh-CN", "btn"), ("GitHub", "https://github.com/Linfeng-Tang", "btn-blue"), ("Publications", "./publications.html", "btn-gold")]
         highlights_title = "Highlights"
