@@ -466,13 +466,13 @@ def page_home(lang):
         summary = "于 2025 年 12 月在武汉大学·电子信息学院获得博士学位，于 2020 年 6 月在中南大学·计算机学院获得学士学位。研究方向为多源图像融合感知，主要包括多模图像融合、视频融合、图像复原、图像匹配，以及语义感知驱动的图像融合。近五年以第一作者（导师第一或共同第一）发表学术论文 16 篇，包含中科院一区、IEEE Trans、CCF A 等高水平论文 15 篇，其中 ESI 热点论文（前 0.1%）6 篇，ESI 高被引论文（前 1%）7 篇；谷歌学术引用 6900 余次，H 指数 21，3 篇引用超过 1000 次，单篇引用最高 1416 次。"
         aff = ["机器人学院", "武汉大学", "弘毅博士后", "合作导师：马佳义教授", "武汉，中国 430072"]
         chips = ["多源融合感知", "图像融合", "图像复原", "语义感知"]
-        actions = [("谷歌学术", "https://scholar.google.com/citations?user=PyRqpAsAAAAJ&hl=zh-CN", "btn"), ("GitHub", "https://github.com/Linfeng-Tang", "btn-blue"), ("论文列表", "./publications.html", "btn-gold"), ("学术服务", "./services.html", "btn-neutral")]
+        actions = [("谷歌学术", "https://scholar.google.com/citations?user=PyRqpAsAAAAJ&hl=zh-CN", "btn"), ("GitHub", "https://github.com/Linfeng-Tang", "btn-blue"), ("论文列表", "./publications.html", "btn-gold")]
         highlights_title = "亮点"
         highlights = ["World's Top 2% Scientists, 2025", "NeurIPS 2025 口头报告", "Information Fusion 2024 年度唯一最佳论文奖", "中国图象图形学报 2024 年度优秀论文，2024", "中国图象图形学报 2020-2024 优秀论文，2025", "IEEE/CAA JAS 钱学森论文奖，2023", "6 篇 ESI 热点论文", "7 篇 ESI 高被引论文"]
         research_title = "研究方向"
         focus = [
             ("多模图像融合", "面向红外-可见光图像融合、视频融合、可控融合、配准-融合联合建模，以及通用图像融合。"),
-            ("多模图像复原", "面向红外-可见光图像，结合多模图像互补信息，研究退化感知复原、统一融合-复原框架，以及基于扩散模型的图像复原方法。"),
+            ("多模图像复原", "利用多模图像互补信息，研究退化感知复原、统一融合-复原框架，以及基于扩散模型的图像复原。"),
             ("高低层视觉协同优化", "探索视觉-语义协同优化策略，以及服务于高层视觉任务的语义感知图像融合模型。"),
         ]
         rep_title = "代表性论文"
@@ -489,7 +489,7 @@ def page_home(lang):
         summary = "I received my Ph.D. degree from the School of Electronic Information, Wuhan University in December 2025 and my B.S. degree from the School of Computer Science and Engineering, Central South University in June 2020. My research focuses on multi-source image fusion perception, including multi-modal image fusion, video fusion, image restoration, image matching, and semantics-aware image fusion. In the past five years, I have published 16 papers as first author, advisor-first-author, or co-first author, including 15 high-level papers in CAS Q1 journals, IEEE Transactions, and CCF-A venues. These papers include 6 ESI Hot Papers (top 0.1%) and 7 ESI Highly Cited Papers (top 1%). My Google Scholar citations exceed 6,900, with an h-index of 21; 3 papers have over 1,000 citations, and the highest-cited paper has 1,416 citations."
         aff = ["School of Robotics", "Wuhan University", "Hongyi Postdoctoral Fellow", "Advisor: Prof. Jiayi Ma", "Wuhan, 430072, China"]
         chips = ["Multi-source Fusion Perception", "Image Fusion", "Image Restoration", "Semantic Perception"]
-        actions = [("Google Scholar", "https://scholar.google.com/citations?user=PyRqpAsAAAAJ&hl=zh-CN", "btn"), ("GitHub", "https://github.com/Linfeng-Tang", "btn-blue"), ("Publications", "./publications.html", "btn-gold"), ("Services", "./services.html", "btn-neutral")]
+        actions = [("Google Scholar", "https://scholar.google.com/citations?user=PyRqpAsAAAAJ&hl=zh-CN", "btn"), ("GitHub", "https://github.com/Linfeng-Tang", "btn-blue"), ("Publications", "./publications.html", "btn-gold")]
         highlights_title = "Highlights"
         highlights = ["World's Top 2% Scientists, 2025", "NeurIPS 2025 Oral", "Information Fusion 2024 Sole Best Paper Award", "Journal of Image and Graphics 2024 Excellent Paper, 2024", "Journal of Image and Graphics 2020-2024 Excellent Paper, 2025", "Hsue-shen Tsien Paper Award, 2023", "6 ESI Hot Papers", "7 ESI Highly Cited Papers"]
         research_title = "Research Focus"
@@ -530,12 +530,15 @@ def page_home(lang):
           {en_name}
           <div class="subtitle">{escape(subtitle)}</div>
           <p class="summary">{escape(summary)}</p>
-          <div class="chips">{chip_html}</div>
           <div class="actions">{action_html}</div>
         </div>
       </article>
 
       <div class="side-stack">
+        <aside class="info-card keyword-card">
+          <span class="eyebrow">{escape(research_title)}</span>
+          <div class="chips">{chip_html}</div>
+        </aside>
         <aside class="info-card">
           <span class="eyebrow">{escape(highlights_title)}</span>
           <div class="compact-badges">{highlight_html}</div>
