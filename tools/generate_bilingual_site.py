@@ -41,19 +41,20 @@ PUBS = [
         "title": "VideoFusion: A Spatio-Temporal Collaborative Network for Multi-modal Video Fusion and Restoration",
         "authors": ["Linfeng Tang", "Yeda Wang", "Meiqi Gong", "Zizhuo Li", "Yuxin Deng", "Xunpeng Yi", "Chunyu Li", "Han Xu", "Hao Zhang", "Jiayi Ma"],
         "venue_text": "In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026",
-        "citations": "10",
+        "citations": "11",
         "links": [("PDF", "https://arxiv.org/abs/2503.23359"), ("CODE", "https://github.com/Linfeng-Tang/VideoFusion")],
     },
     {
         "id": "dspfusion",
-        "groups": "all",
-        "venue": "ArXiv",
+        "groups": "selected all",
+        "venue": "IEEE TIP",
         "image": "DSPFusion.jpg",
         "title": "DSPFusion: Image Fusion via Degradation and Semantic Dual-Prior Guidance",
-        "authors": ["Linfeng Tang", "Chunyu Li", "Guoqing Wang", "Yixuan Yuan", "Jiayi Ma"],
-        "venue_text": "arXiv preprint arXiv:2503.23355, 2025",
+        "authors": ["Linfeng Tang", "Chunyu Li", "Yeda Wang", "Guoqing Wang", "Yixuan Yuan", "Jiayi Ma"],
+        "venue_text": "IEEE Transactions on Image Processing (TIP), accepted, 2026",
+        "note": {"zh": "2026 年 6 月 2 日接收", "en": "Accepted on June 2, 2026"},
         "citations": "2",
-        "links": [("PDF", "https://arxiv.org/abs/2503.23355")],
+        "links": [("PDF", "https://doi.org/10.1109/TIP.2026.3700938"), ("ARXIV", "https://arxiv.org/abs/2503.23355"), ("CODE", "https://github.com/Linfeng-Tang/DSPFusion")],
     },
     {
         "id": "mask-difuser",
@@ -63,7 +64,7 @@ PUBS = [
         "title": "Mask-DiFuser: A Masked Diffusion Model for Unified Unsupervised Image Fusion",
         "authors": ["Linfeng Tang", "Chunyu Li", "Jiayi Ma"],
         "venue_text": "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2026",
-        "citations": "24",
+        "citations": "41",
         "links": [("PDF", "https://ieeexplore.ieee.org/document/11162636"), ("CODE", "https://github.com/Linfeng-Tang/Mask-DiFuser")],
     },
     {
@@ -75,7 +76,7 @@ PUBS = [
         "authors": ["Linfeng Tang", "Yeda Wang", "Zhanchuan Cai", "Junjun Jiang", "Jiayi Ma"],
         "venue_text": "In Advances in Neural Information Processing Systems (NeurIPS), 2025",
         "note": {"zh": "口头报告", "en": "Oral Presentation"},
-        "citations": "16",
+        "citations": "21",
         "links": [("PDF", "https://arxiv.org/pdf/2503.23356"), ("CODE", "https://github.com/Linfeng-Tang/ControlFusion")],
     },
     {
@@ -86,8 +87,8 @@ PUBS = [
         "title": "C2RF: Bridging Multi-modal Image Registration and Fusion via Commonality Mining and Contrastive Learning",
         "authors": ["Linfeng Tang", "Qinglong Yan", "Xinyu Xiang", "Leyuan Fang", "Jiayi Ma"],
         "venue_text": "International Journal of Computer Vision (IJCV), 2025",
-        "citations": "37",
-        "home_citations": "39",
+        "citations": "52",
+        "home_citations": "52",
         "links": [("PDF", "https://link.springer.com/article/10.1007/s11263-025-02427-1"), ("CODE", "https://github.com/Linfeng-Tang/C2RF")],
     },
     {
@@ -98,7 +99,7 @@ PUBS = [
         "title": "DRMF: Degradation-Robust Multi-Modal Image Fusion via Composable Diffusion Prior",
         "authors": ["Linfeng Tang", "Yuxin Deng", "Xunpeng Yi", "Qinglong Yan", "Yixuan Yuan", "Jiayi Ma"],
         "venue_text": "Proceedings of the ACM International Conference on Multimedia (ACM MM), 2024",
-        "citations": "65",
+        "citations": "75",
         "links": [("PDF", "https://dl.acm.org/doi/10.1145/3664647.3681064"), ("CODE", "https://github.com/Linfeng-Tang/DRMF")],
     },
     {
@@ -109,8 +110,8 @@ PUBS = [
         "title": "Image Fusion in the Loop of High-level Vision Tasks: A Semantic-aware Real-time Infrared and Visible Image Fusion Network",
         "authors": ["Linfeng Tang", "Jiteng Yuan", "Jiayi Ma"],
         "venue_text": "Information Fusion, 2022",
-        "citations": "1,064",
-        "home_citations": "1,071",
+        "citations": "1,121",
+        "home_citations": "1,121",
         "tags": ["hot", "cited", "award"],
         "links": [("PDF", "https://www.sciencedirect.com/science/article/pii/S1566253521002542"), ("CODE", "https://github.com/Linfeng-Tang/SeAFusion")],
     },
@@ -122,8 +123,8 @@ PUBS = [
         "title": "SwinFusion: Cross-domain Long-range Learning for General Image Fusion via Swin Transformer",
         "authors": ["Jiayi Ma", "Linfeng Tang", "Fan Fan", "Jun Huang", "Xiaoguang Mei", "Yong Ma"],
         "venue_text": "IEEE/CAA Journal of Automatica Sinica, 2022",
-        "citations": "1,404",
-        "home_citations": "1,421",
+        "citations": "1,502",
+        "home_citations": "1,502",
         "tags": ["hot", "cited", "award"],
         "links": [("PDF", "https://ieeexplore.ieee.org/document/9812535"), ("CODE", "https://github.com/Linfeng-Tang/SwinFusion")],
     },
@@ -135,8 +136,8 @@ PUBS = [
         "title": "PIAFusion: A Progressive Infrared and Visible Image Fusion Network Based on Illumination Aware",
         "authors": ["Linfeng Tang", "Jiteng Yuan", "Hao Zhang", "Xingyu Jiang", "Jiayi Ma"],
         "venue_text": "Information Fusion, 2022",
-        "citations": "1,100",
-        "home_citations": "1,113",
+        "citations": "1,186",
+        "home_citations": "1,186",
         "tags": ["hot", "cited"],
         "links": [("PDF", "https://www.sciencedirect.com/science/article/pii/S156625352200032X"), ("CODE", "https://github.com/Linfeng-Tang/PIAFusion")],
     },
@@ -148,7 +149,7 @@ PUBS = [
         "title": "SuperFusion: A Versatile Image Registration and Fusion Network with Semantic Awareness",
         "authors": ["Linfeng Tang", "Yuxin Deng", "Yong Ma", "Jun Huang", "Jiayi Ma"],
         "venue_text": "IEEE/CAA Journal of Automatica Sinica, 2022",
-        "citations": "451",
+        "citations": "482",
         "tags": ["hot", "cited"],
         "links": [("PDF", "https://ieeexplore.ieee.org/document/9970457"), ("CODE", "https://github.com/Linfeng-Tang/SuperFusion")],
     },
@@ -160,7 +161,7 @@ PUBS = [
         "title": "DIVFusion: Darkness-free Infrared and Visible Image Fusion",
         "authors": ["Linfeng Tang", "Xinyu Xiang", "Hao Zhang", "Meiqi Gong", "Jiayi Ma"],
         "venue_text": "Information Fusion, 2023",
-        "citations": "485",
+        "citations": "521",
         "tags": ["hot", "cited"],
         "links": [("PDF", "https://www.sciencedirect.com/science/article/pii/S156625352200210X"), ("CODE", "https://github.com/Linfeng-Tang/DIVFusion")],
     },
@@ -172,7 +173,7 @@ PUBS = [
         "title": "Rethinking the Necessity of Image Fusion in High-level Vision Tasks: A Practical Infrared and Visible Image Fusion Network Based on Progressive Semantic Injection and Scene Fidelity",
         "authors": ["Linfeng Tang", "Hao Zhang", "Han Xu", "Jiayi Ma"],
         "venue_text": "Information Fusion, 2023",
-        "citations": "351",
+        "citations": "386",
         "tags": ["hot", "cited"],
         "links": [("PDF", "https://www.sciencedirect.com/science/article/pii/S1566253523001860"), ("CODE", "https://github.com/Linfeng-Tang/PSFusion")],
     },
@@ -184,7 +185,7 @@ PUBS = [
         "title": "STDFusionNet: An Infrared and Visible Image Fusion Network Based on Salient Target Detection",
         "authors": ["Jiayi Ma", "Linfeng Tang", "Meilong Xu", "Hao Zhang", "Guobao Xiao"],
         "venue_text": "IEEE Transactions on Instrumentation and Measurement, 2021",
-        "citations": "633",
+        "citations": "664",
         "tags": ["cited"],
         "links": [("PDF", "https://ieeexplore.ieee.org/document/9416507"), ("CODE", "https://github.com/Linfeng-Tang/STDFusionNet")],
     },
@@ -196,8 +197,8 @@ PUBS = [
         "title": "Deep Learning-based Image Fusion: A Survey",
         "authors": ["Linfeng Tang", "Hao Zhang", "Han Xu", "Jiayi Ma"],
         "venue_text": "Journal of Image and Graphics, 2024",
-        "citations": "98",
-        "home_citations": "97",
+        "citations": "103",
+        "home_citations": "103",
         "tags": ["note", "award2", "award"],
         "links": [("PDF", "https://txtx.publish.founderss.cn/zh/article/doi/10.11834/jig.220422"), ("CODE", "https://github.com/Linfeng-Tang/Image-Fusion")],
     },
@@ -209,7 +210,7 @@ PUBS = [
         "title": "DRLIE: Flexible Low-light Image Enhancement via Disentangled Representations",
         "authors": ["Linfeng Tang", "Jiayi Ma", "Hao Zhang", "Xiaojie Guo"],
         "venue_text": "IEEE Transactions on Neural Networks and Learning Systems, 2024",
-        "citations": "33",
+        "citations": "34",
         "links": [("PDF", "https://ieeexplore.ieee.org/document/9833451"), ("CODE", "https://github.com/Linfeng-Tang/DRLIE")],
     },
     {
@@ -220,7 +221,7 @@ PUBS = [
         "title": "CAMF: An Interpretable Infrared and Visible Image Fusion Network Based on Class Activation Mapping",
         "authors": ["Linfeng Tang", "Ziang Chen", "Jun Huang", "Jiayi Ma"],
         "venue_text": "IEEE Transactions on Multimedia, 2024",
-        "citations": "69",
+        "citations": "80",
         "links": [("PDF", "https://ieeexplore.ieee.org/document/10288391"), ("CODE", "https://github.com/Linfeng-Tang/CAMF")],
     },
     {
@@ -231,12 +232,13 @@ PUBS = [
         "title": "Infrared and Visible Image Fusion via Parallel Scene and Texture Learning",
         "authors": ["Meilong Xu", "Linfeng Tang", "Hao Zhang", "Jiayi Ma"],
         "venue_text": "Pattern Recognition, 2022",
-        "citations": "67",
+        "citations": "68",
         "links": [("PDF", "https://www.sciencedirect.com/science/article/pii/S0031320322004101"), ("CODE", "https://github.com/Melon-Xu/PSTLFusion")],
     },
 ]
 
 NEWS = [
+    ("2026-06-02", "DSPFusion 被 IEEE TIP 接收", "DSPFusion accepted by IEEE TIP", [("paper", "论文", "Paper", "https://doi.org/10.1109/TIP.2026.3700938"), ("code", "代码", "Code", "https://github.com/Linfeng-Tang/DSPFusion")]),
     ("2026-02-20", "VideoFusion 被 CVPR 2026 接收", "VideoFusion accepted by CVPR 2026", [("paper", "论文", "Paper", "https://arxiv.org/abs/2503.23359"), ("code", "代码", "Code", "https://github.com/Linfeng-Tang/VideoFusion")]),
     ("2025-12-26", "图像融合综述获《中国图象图形学报》2020-2024 优秀论文", "The image fusion survey received the Journal of Image and Graphics 2020-2024 Excellent Paper Award", [("paper", "论文", "Paper", "https://www.cjig.cn/thesisDetails#10.11834/jig.220422&lang=zh")]),
     ("2025-09-18", "ControlFusion 被 NeurIPS 2025 接收为口头报告", "ControlFusion accepted by NeurIPS 2025 as an Oral presentation", [("paper", "论文", "Paper", "https://arxiv.org/pdf/2503.23356"), ("code", "代码", "Code", "https://github.com/Linfeng-Tang/ControlFusion")]),
@@ -496,7 +498,7 @@ def page_home(lang):
         h1 = "唐霖峰"
         en_name = '<div class="en-name">Linfeng Tang</div>'
         subtitle = "武汉大学弘毅博士后 · 合作导师：马佳义教授"
-        summary = "于 2025 年 12 月在武汉大学·电子信息学院获得博士学位，于 2020 年 6 月在中南大学·计算机学院获得学士学位。研究方向为多源图像融合感知，主要包括多模图像融合、视频融合、图像复原、图像匹配，以及语义感知驱动的图像融合。近五年以第一作者（导师第一或共同第一）发表学术论文 16 篇，包含中科院一区、IEEE Trans、CCF A 等高水平论文 15 篇，其中 ESI 热点论文（前 0.1%）6 篇，ESI 高被引论文（前 1%）7 篇；谷歌学术引用 6900 余次，H 指数 21，3 篇引用超过 1000 次，单篇引用最高 1416 次。"
+        summary = "于 2025 年 12 月在武汉大学·电子信息学院获得博士学位，于 2020 年 6 月在中南大学·计算机学院获得学士学位。研究方向为多源图像融合感知，主要包括多模图像融合、视频融合、图像复原、图像匹配，以及语义感知驱动的图像融合。近五年以第一作者（导师第一或共同第一）发表学术论文 17 篇，包含中科院一区、IEEE Trans、CCF A 等高水平论文 16 篇，其中 ESI 热点论文（前 0.1%）6 篇，ESI 高被引论文（前 1%）7 篇；谷歌学术引用 7400 余次，H 指数 21，3 篇引用超过 1000 次，单篇引用最高 1502 次。"
         aff = ["机器人学院", "武汉大学", "弘毅博士后", "合作导师：马佳义教授", "武汉，中国 430072"]
         chips = ["多源融合感知", "图像融合", "图像复原", "语义感知"]
         actions = [("谷歌学术", "https://scholar.google.com/citations?user=PyRqpAsAAAAJ&hl=zh-CN", "btn"), ("GitHub", "https://github.com/Linfeng-Tang", "btn-blue"), ("论文列表", "./publications.html", "btn-gold")]
@@ -519,7 +521,7 @@ def page_home(lang):
         h1 = "Linfeng Tang"
         en_name = ""
         subtitle = "Hongyi Postdoc at Wuhan University - Advisor: Prof. Jiayi Ma"
-        summary = "I received my Ph.D. degree from the School of Electronic Information, Wuhan University in December 2025 and my B.S. degree from the School of Computer Science and Engineering, Central South University in June 2020. My research focuses on multi-source image fusion perception, including multi-modal image fusion, video fusion, image restoration, image matching, and semantics-aware image fusion. In the past five years, I have published 16 papers as first author, advisor-first-author, or co-first author, including 15 high-level papers in CAS Q1 journals, IEEE Transactions, and CCF-A venues. These papers include 6 ESI Hot Papers (top 0.1%) and 7 ESI Highly Cited Papers (top 1%). My Google Scholar citations exceed 6,900, with an h-index of 21; 3 papers have over 1,000 citations, and the highest-cited paper has 1,416 citations."
+        summary = "I received my Ph.D. degree from the School of Electronic Information, Wuhan University in December 2025 and my B.S. degree from the School of Computer Science and Engineering, Central South University in June 2020. My research focuses on multi-source image fusion perception, including multi-modal image fusion, video fusion, image restoration, image matching, and semantics-aware image fusion. In the past five years, I have published 17 papers as first author, advisor-first-author, or co-first author, including 16 high-level papers in CAS Q1 journals, IEEE Transactions, and CCF-A venues. These papers include 6 ESI Hot Papers (top 0.1%) and 7 ESI Highly Cited Papers (top 1%). My Google Scholar citations exceed 7,400, with an h-index of 21; 3 papers have over 1,000 citations, and the highest-cited paper has 1,502 citations."
         aff = ["School of Robotics", "Wuhan University", "Hongyi Postdoc", "Advisor: Prof. Jiayi Ma", "Wuhan, 430072, China"]
         chips = ["Multi-source Fusion Perception", "Image Fusion", "Image Restoration", "Semantic Perception"]
         actions = [("Google Scholar", "https://scholar.google.com/citations?user=PyRqpAsAAAAJ&hl=zh-CN", "btn"), ("GitHub", "https://github.com/Linfeng-Tang", "btn-blue"), ("Publications", "./publications.html", "btn-gold")]
@@ -544,7 +546,7 @@ def page_home(lang):
     action_html = "".join(action_parts)
     highlight_html = "".join(f"<span>{escape(x)}</span>" for x in highlights)
     focus_html = "\n".join(f'        <article class="card">\n          <h3>{escape(name)}</h3>\n          <p>{escape(text)}</p>\n        </article>' for name, text in focus)
-    selected = [PUBS[i] for i in [0, 2, 3, 4, 7, 6, 8, 13]]
+    selected = [PUBS[i] for i in [1, 0, 2, 3, 4, 7, 6, 8]]
     pubs_html = "\n\n".join(pub_item(pub, lang, compact=True) for pub in selected)
     news_html = "\n".join(news_item(item, lang).replace('<div class="mini-actions">', '<p>').replace('</div>', '</p>', 1) for item in NEWS[:3])
     return f"""{head(title, desc, 'index.html', lang)}
