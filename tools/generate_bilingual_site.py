@@ -498,7 +498,7 @@ def page_home(lang):
         h1 = "唐霖峰"
         en_name = '<div class="en-name">Linfeng Tang</div>'
         subtitle = "武汉大学弘毅博士后 · 合作导师：马佳义教授"
-        summary = "于 2025 年 12 月在武汉大学·电子信息学院获得博士学位，于 2020 年 6 月在中南大学·计算机学院获得学士学位。研究方向为多源图像融合感知，主要包括多模图像融合、视频融合、图像复原、图像匹配，以及语义感知驱动的图像融合。近五年以第一作者（导师第一或共同第一）发表学术论文 17 篇，包含中科院一区、IEEE Trans、CCF A 等高水平论文 16 篇，其中 ESI 热点论文（前 0.1%）6 篇，ESI 高被引论文（前 1%）7 篇；谷歌学术引用 7400 余次，H 指数 21，3 篇引用超过 1000 次，单篇引用最高 1502 次。"
+        summary = "于 2025 年 12 月在武汉大学·电子信息学院获得博士学位，于 2020 年 6 月在中南大学·计算机学院获得学士学位。研究方向为多源图像融合感知，主要包括多模图像融合、视频融合、图像复原、图像匹配，以及语义感知驱动的图像融合。近五年以第一作者（导师第一或共同第一）发表学术论文 17 篇，包含中科院一区、IEEE Trans、CCF A 等高水平论文 16 篇，其中 ESI 热点论文（前 0.1%）6 篇，ESI 高被引论文（前 1%）7 篇；谷歌学术引用 7478 次，H 指数 21，i10 指数 26，3 篇引用超过 1000 次，单篇引用最高 1502 次。"
         aff = ["机器人学院", "武汉大学", "弘毅博士后", "合作导师：马佳义教授", "武汉，中国 430072"]
         chips = ["多源融合感知", "图像融合", "图像复原", "语义感知"]
         actions = [("谷歌学术", "https://scholar.google.com/citations?user=PyRqpAsAAAAJ&hl=zh-CN", "btn"), ("GitHub", "https://github.com/Linfeng-Tang", "btn-blue"), ("论文列表", "./publications.html", "btn-gold")]
@@ -521,7 +521,7 @@ def page_home(lang):
         h1 = "Linfeng Tang"
         en_name = ""
         subtitle = "Hongyi Postdoc at Wuhan University - Advisor: Prof. Jiayi Ma"
-        summary = "I received my Ph.D. degree from the School of Electronic Information, Wuhan University in December 2025 and my B.S. degree from the School of Computer Science and Engineering, Central South University in June 2020. My research focuses on multi-source image fusion perception, including multi-modal image fusion, video fusion, image restoration, image matching, and semantics-aware image fusion. In the past five years, I have published 17 papers as first author, advisor-first-author, or co-first author, including 16 high-level papers in CAS Q1 journals, IEEE Transactions, and CCF-A venues. These papers include 6 ESI Hot Papers (top 0.1%) and 7 ESI Highly Cited Papers (top 1%). My Google Scholar citations exceed 7,400, with an h-index of 21; 3 papers have over 1,000 citations, and the highest-cited paper has 1,502 citations."
+        summary = "I received my Ph.D. degree from the School of Electronic Information, Wuhan University in December 2025 and my B.S. degree from the School of Computer Science and Engineering, Central South University in June 2020. My research focuses on multi-source image fusion perception, including multi-modal image fusion, video fusion, image restoration, image matching, and semantics-aware image fusion. In the past five years, I have published 17 papers as first author, advisor-first-author, or co-first author, including 16 high-level papers in CAS Q1 journals, IEEE Transactions, and CCF-A venues. These papers include 6 ESI Hot Papers (top 0.1%) and 7 ESI Highly Cited Papers (top 1%). My Google Scholar profile has 7,478 citations, an h-index of 21, and an i10-index of 26; 3 papers have over 1,000 citations, and the highest-cited paper has 1,502 citations."
         aff = ["School of Robotics", "Wuhan University", "Hongyi Postdoc", "Advisor: Prof. Jiayi Ma", "Wuhan, 430072, China"]
         chips = ["Multi-source Fusion Perception", "Image Fusion", "Image Restoration", "Semantic Perception"]
         actions = [("Google Scholar", "https://scholar.google.com/citations?user=PyRqpAsAAAAJ&hl=zh-CN", "btn"), ("GitHub", "https://github.com/Linfeng-Tang", "btn-blue"), ("Publications", "./publications.html", "btn-gold")]
