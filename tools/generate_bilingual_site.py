@@ -58,13 +58,18 @@ PUBS = [
     },
     {
         "id": "mask-difuser",
-        "groups": "selected all",
+        "groups": "selected highly-cited all",
         "venue": "IEEE TPAMI",
         "image": "Mask-DiFuser.jpg",
         "title": "Mask-DiFuser: A Masked Diffusion Model for Unified Unsupervised Image Fusion",
         "authors": ["Linfeng Tang", "Chunyu Li", "Jiayi Ma"],
         "venue_text": "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2026",
         "citations": "41",
+        "tags": ["cited"],
+        "summary": {
+            "zh": "以掩码扩散模型统一建模多种无监督图像融合任务，现入选 ESI 高被引论文（前 1%）。",
+            "en": "A masked diffusion model that unifies multiple unsupervised image-fusion tasks; now an ESI Highly Cited Paper (top 1%).",
+        },
         "links": [("PDF", "https://ieeexplore.ieee.org/document/11162636"), ("CODE", "https://github.com/Linfeng-Tang/Mask-DiFuser")],
     },
     {
@@ -113,6 +118,10 @@ PUBS = [
         "citations": "1,121",
         "home_citations": "1,121",
         "tags": ["hot", "cited", "award"],
+        "summary": {
+            "zh": "将语义感知与高层视觉任务反馈引入实时红外-可见光融合；入选 ESI 热点与高被引论文，并获 Information Fusion 2024 年度唯一最佳论文奖。",
+            "en": "Introduces semantic awareness and high-level task feedback into real-time infrared-visible fusion; an ESI Hot and Highly Cited Paper and the sole Information Fusion Best Paper Award winner for 2024.",
+        },
         "links": [("PDF", "https://www.sciencedirect.com/science/article/pii/S1566253521002542"), ("CODE", "https://github.com/Linfeng-Tang/SeAFusion")],
     },
     {
@@ -126,6 +135,10 @@ PUBS = [
         "citations": "1,502",
         "home_citations": "1,502",
         "tags": ["hot", "cited", "award"],
+        "summary": {
+            "zh": "利用 Swin Transformer 建模跨域长程依赖，实现通用图像融合；入选 ESI 热点与高被引论文，并获 IEEE/CAA JAS 2023 钱学森论文奖。",
+            "en": "Models cross-domain long-range dependencies with a Swin Transformer for general image fusion; an ESI Hot and Highly Cited Paper and winner of the 2023 Hsue-shen Tsien Paper Award.",
+        },
         "links": [("PDF", "https://ieeexplore.ieee.org/document/9812535"), ("CODE", "https://github.com/Linfeng-Tang/SwinFusion")],
     },
     {
@@ -139,6 +152,10 @@ PUBS = [
         "citations": "1,186",
         "home_citations": "1,186",
         "tags": ["hot", "cited"],
+        "summary": {
+            "zh": "依据光照条件渐进融合红外与可见光信息，兼顾昼夜场景质量；入选 ESI 热点与高被引论文。",
+            "en": "Progressively fuses infrared and visible information according to illumination conditions for robust day-and-night performance; an ESI Hot and Highly Cited Paper.",
+        },
         "links": [("PDF", "https://www.sciencedirect.com/science/article/pii/S156625352200032X"), ("CODE", "https://github.com/Linfeng-Tang/PIAFusion")],
     },
     {
@@ -151,6 +168,10 @@ PUBS = [
         "venue_text": "IEEE/CAA Journal of Automatica Sinica, 2022",
         "citations": "482",
         "tags": ["hot", "cited"],
+        "summary": {
+            "zh": "联合图像配准与语义感知融合，面向空间未对齐的多模态图像；入选 ESI 热点与高被引论文。",
+            "en": "Jointly addresses image registration and semantics-aware fusion for spatially misaligned multimodal inputs; an ESI Hot and Highly Cited Paper.",
+        },
         "links": [("PDF", "https://ieeexplore.ieee.org/document/9970457"), ("CODE", "https://github.com/Linfeng-Tang/SuperFusion")],
     },
     {
@@ -163,6 +184,10 @@ PUBS = [
         "venue_text": "Information Fusion, 2023",
         "citations": "521",
         "tags": ["hot", "cited"],
+        "summary": {
+            "zh": "面向低照度场景抑制融合结果中的暗区并增强细节可见性；入选 ESI 热点与高被引论文。",
+            "en": "Suppresses dark regions and improves detail visibility in low-light infrared-visible fusion; an ESI Hot and Highly Cited Paper.",
+        },
         "links": [("PDF", "https://www.sciencedirect.com/science/article/pii/S156625352200210X"), ("CODE", "https://github.com/Linfeng-Tang/DIVFusion")],
     },
     {
@@ -175,6 +200,10 @@ PUBS = [
         "venue_text": "Information Fusion, 2023",
         "citations": "386",
         "tags": ["hot", "cited"],
+        "summary": {
+            "zh": "通过渐进语义注入与场景保真，将低层融合质量和高层视觉任务协同优化；入选 ESI 热点与高被引论文。",
+            "en": "Couples low-level fusion quality with high-level vision tasks through progressive semantic injection and scene fidelity; an ESI Hot and Highly Cited Paper.",
+        },
         "links": [("PDF", "https://www.sciencedirect.com/science/article/pii/S1566253523001860"), ("CODE", "https://github.com/Linfeng-Tang/PSFusion")],
     },
     {
@@ -187,6 +216,10 @@ PUBS = [
         "venue_text": "IEEE Transactions on Instrumentation and Measurement, 2021",
         "citations": "664",
         "tags": ["cited"],
+        "summary": {
+            "zh": "利用显著目标检测增强融合图像中的关键热目标与结构信息；入选 ESI 高被引论文（前 1%）。",
+            "en": "Uses salient-target detection to preserve critical thermal targets and structural information in fused images; an ESI Highly Cited Paper (top 1%).",
+        },
         "links": [("PDF", "https://ieeexplore.ieee.org/document/9416507"), ("CODE", "https://github.com/Linfeng-Tang/STDFusionNet")],
     },
     {
@@ -435,7 +468,7 @@ def tag_label(tag, lang, pub=None):
         return CUSTOM_TAG_LABELS[pub["id"]][tag][lang]
     labels = {
         "hot": {"zh": "ESI 热点论文", "en": "ESI Hot Paper"},
-        "cited": {"zh": "ESI 高被引论文", "en": "ESI Highly Cited"},
+        "cited": {"zh": "ESI 高被引论文", "en": "ESI Highly Cited Paper"},
         "award": {"zh": "最佳论文奖", "en": "Best Paper Award"},
         "award2": {"zh": "2020-2024 优秀论文", "en": "2020-2024 Excellent Paper"},
         "note": {"zh": "高影响力论文", "en": "High-Impact Paper"},
@@ -450,6 +483,9 @@ def pub_item(pub, lang, compact=False):
     note = ""
     if "note" in pub:
         note = f'            <div class="pub-note">{escape(pub["note"][lang])}</div>\n'
+    summary = ""
+    if "summary" in pub:
+        summary = f'            <p class="pub-summary">{escape(pub["summary"][lang])}</p>\n'
     citation_count = pub.get("home_citations", pub["citations"]) if compact else pub["citations"]
     citation_label = f"引用 {citation_count}" if lang == "zh" else f"Citations {citation_count}"
     tag_html = [f'<span class="badge-citation">{escape(citation_label)}</span>']
@@ -470,7 +506,7 @@ def pub_item(pub, lang, compact=False):
             <h3><a href="{link}"{' target="_blank" rel="noreferrer"' if not compact else ''}>{title}</a></h3>
             <div class="pub-authors">{authors_html(pub["authors"])}</div>
             <div class="pub-venue">{escape(pub["venue_text"])}</div>
-{note}            <div class="pub-highlights">{"".join(tag_html)}</div>
+{note}{summary}            <div class="pub-highlights">{"".join(tag_html)}</div>
             <div class="pub-actions">{"".join(links)}</div>
           </div>
         </article>"""
@@ -493,17 +529,17 @@ def news_item(item, lang):
 def page_home(lang):
     if lang == "zh":
         title = "唐霖峰 | 个人学术主页"
-        desc = "唐霖峰个人学术主页。"
+        desc = "唐霖峰个人学术主页：多源图像融合感知研究，6 篇 ESI 热点论文、8 篇 ESI 高被引论文。"
         eyebrow = "个人学术主页"
         h1 = "唐霖峰"
         en_name = '<div class="en-name">Linfeng Tang</div>'
         subtitle = "武汉大学弘毅博士后 · 合作导师：马佳义教授"
-        summary = "于 2025 年 12 月在武汉大学·电子信息学院获得博士学位，于 2020 年 6 月在中南大学·计算机学院获得学士学位。研究方向为多源图像融合感知，主要包括多模图像融合、视频融合、图像复原、图像匹配，以及语义感知驱动的图像融合。近五年以第一作者（导师第一或共同第一）发表学术论文 17 篇，包含中科院一区、IEEE Trans、CCF A 等高水平论文 16 篇，其中 ESI 热点论文（前 0.1%）6 篇，ESI 高被引论文（前 1%）7 篇；谷歌学术引用 7478 次，H 指数 21，i10 指数 26，3 篇引用超过 1000 次，单篇引用最高 1502 次。"
+        summary = "于 2025 年 12 月在武汉大学·电子信息学院获得博士学位，于 2020 年 6 月在中南大学·计算机学院获得学士学位。研究方向为多源图像融合感知，主要包括多模图像融合、视频融合、图像复原、图像匹配，以及语义感知驱动的图像融合。近五年以第一作者（导师第一或共同第一）发表学术论文 17 篇，包含中科院一区、IEEE Trans、CCF A 等高水平论文 16 篇。Mask-DiFuser、SeAFusion、PIAFusion、SwinFusion、SuperFusion、PSFusion、DIVFusion 和 STDFusionNet 共 8 篇入选 ESI 高被引论文（前 1%）；其中 SeAFusion、PIAFusion、SwinFusion、SuperFusion、PSFusion 和 DIVFusion 共 6 篇同时入选 ESI 热点论文（前 0.1%）。谷歌学术引用 7478 次，H 指数 21，i10 指数 26，3 篇引用超过 1000 次，单篇引用最高 1502 次。"
         aff = ["机器人学院", "武汉大学", "弘毅博士后", "合作导师：马佳义教授", "武汉，中国 430072"]
         chips = ["多源融合感知", "图像融合", "图像复原", "语义感知"]
         actions = [("谷歌学术", "https://scholar.google.com/citations?user=PyRqpAsAAAAJ&hl=zh-CN", "btn"), ("GitHub", "https://github.com/Linfeng-Tang", "btn-blue"), ("论文列表", "./publications.html", "btn-gold")]
         highlights_title = "亮点"
-        highlights = ["World's Top 2% Scientists, 2025", "NeurIPS 2025 口头报告", "Information Fusion 2024 年度唯一最佳论文奖", "中国图象图形学报 2024 年度优秀论文，2024", "中国图象图形学报 2020-2024 优秀论文，2025", "IEEE/CAA JAS 钱学森论文奖，2023", "6 篇 ESI 热点论文", "7 篇 ESI 高被引论文"]
+        highlights = ["World's Top 2% Scientists, 2025", "NeurIPS 2025 口头报告", "Information Fusion 2024 年度唯一最佳论文奖", "中国图象图形学报 2024 年度优秀论文，2024", "中国图象图形学报 2020-2024 优秀论文，2025", "IEEE/CAA JAS 钱学森论文奖，2023", "6 篇 ESI 热点论文", "8 篇 ESI 高被引论文"]
         research_title = "研究方向"
         focus = [
             ("多模图像融合", "面向红外-可见光图像融合、视频融合、可控融合、配准-融合联合建模，以及通用图像融合。"),
@@ -516,17 +552,17 @@ def page_home(lang):
         footer_text = "中文个人学术主页。"
     else:
         title = "Linfeng Tang | Academic Homepage"
-        desc = "Academic homepage of Linfeng Tang."
+        desc = "Academic homepage of Linfeng Tang: multi-source image fusion perception, 6 ESI Hot Papers, and 8 ESI Highly Cited Papers."
         eyebrow = "Academic Homepage"
         h1 = "Linfeng Tang"
         en_name = ""
         subtitle = "Hongyi Postdoc at Wuhan University - Advisor: Prof. Jiayi Ma"
-        summary = "I received my Ph.D. degree from the School of Electronic Information, Wuhan University in December 2025 and my B.S. degree from the School of Computer Science and Engineering, Central South University in June 2020. My research focuses on multi-source image fusion perception, including multi-modal image fusion, video fusion, image restoration, image matching, and semantics-aware image fusion. In the past five years, I have published 17 papers as first author, advisor-first-author, or co-first author, including 16 high-level papers in CAS Q1 journals, IEEE Transactions, and CCF-A venues. These papers include 6 ESI Hot Papers (top 0.1%) and 7 ESI Highly Cited Papers (top 1%). My Google Scholar profile has 7,478 citations, an h-index of 21, and an i10-index of 26; 3 papers have over 1,000 citations, and the highest-cited paper has 1,502 citations."
+        summary = "I received my Ph.D. degree from the School of Electronic Information, Wuhan University in December 2025 and my B.S. degree from the School of Computer Science and Engineering, Central South University in June 2020. My research focuses on multi-source image fusion perception, including multi-modal image fusion, video fusion, image restoration, image matching, and semantics-aware image fusion. In the past five years, I have published 17 papers as first author, advisor-first-author, or co-first author, including 16 high-level papers in CAS Q1 journals, IEEE Transactions, and CCF-A venues. Eight papers—Mask-DiFuser, SeAFusion, PIAFusion, SwinFusion, SuperFusion, PSFusion, DIVFusion, and STDFusionNet—are ESI Highly Cited Papers (top 1%). Six of them—SeAFusion, PIAFusion, SwinFusion, SuperFusion, PSFusion, and DIVFusion—are also ESI Hot Papers (top 0.1%). My Google Scholar profile has 7,478 citations, an h-index of 21, and an i10-index of 26; 3 papers have over 1,000 citations, and the highest-cited paper has 1,502 citations."
         aff = ["School of Robotics", "Wuhan University", "Hongyi Postdoc", "Advisor: Prof. Jiayi Ma", "Wuhan, 430072, China"]
         chips = ["Multi-source Fusion Perception", "Image Fusion", "Image Restoration", "Semantic Perception"]
         actions = [("Google Scholar", "https://scholar.google.com/citations?user=PyRqpAsAAAAJ&hl=zh-CN", "btn"), ("GitHub", "https://github.com/Linfeng-Tang", "btn-blue"), ("Publications", "./publications.html", "btn-gold")]
         highlights_title = "Highlights"
-        highlights = ["World's Top 2% Scientists, 2025", "NeurIPS 2025 Oral", "Information Fusion 2024 Sole Best Paper Award", "Journal of Image and Graphics 2024 Excellent Paper, 2024", "Journal of Image and Graphics 2020-2024 Excellent Paper, 2025", "Hsue-shen Tsien Paper Award, 2023", "6 ESI Hot Papers", "7 ESI Highly Cited Papers"]
+        highlights = ["World's Top 2% Scientists, 2025", "NeurIPS 2025 Oral", "Information Fusion 2024 Sole Best Paper Award", "Journal of Image and Graphics 2024 Excellent Paper, 2024", "Journal of Image and Graphics 2020-2024 Excellent Paper, 2025", "Hsue-shen Tsien Paper Award, 2023", "6 ESI Hot Papers", "8 ESI Highly Cited Papers"]
         research_title = "Research Focus"
         focus = [
             ("Multi-modal Image Fusion", "Infrared-visible image fusion, video fusion, controllable fusion, registration-fusion joint modeling, and general image fusion."),

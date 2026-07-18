@@ -612,6 +612,14 @@ html[lang="en"] .summary {
   color: #3f3430;
 }
 
+.pub-summary {
+  max-width: 920px;
+  margin: 10px 0 0;
+  color: #514845;
+  font-size: 16px;
+  line-height: 1.72;
+}
+
 .pub-actions {
   display: flex;
   flex-wrap: wrap;
