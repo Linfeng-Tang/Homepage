@@ -436,28 +436,28 @@ def authors_html(authors):
 CUSTOM_TAG_LABELS = {
     "seafusion": {
         "award": {
-            "zh": "Information Fusion 2024 年度唯一最佳论文奖",
-            "en": "Information Fusion 2024 Sole Best Paper Award",
+            "zh": "🏅 Information Fusion 2024 年度唯一最佳论文奖",
+            "en": "🏅 Information Fusion 2024 Sole Best Paper Award",
         },
     },
     "swinfusion": {
         "award": {
-            "zh": "IEEE/CAA JAS 2023 钱学森论文奖",
-            "en": "IEEE/CAA JAS 2023 Hsue-shen Tsien Paper Award",
+            "zh": "🏅 IEEE/CAA JAS 2023 钱学森论文奖",
+            "en": "🏅 IEEE/CAA JAS 2023 Hsue-shen Tsien Paper Award",
         },
     },
     "survey": {
         "note": {
-            "zh": "空天信息科技期刊高影响力论文",
-            "en": "High-Impact Paper in Aerospace Information Technology Journals",
+            "zh": "🏅 空天信息科技期刊高影响力论文",
+            "en": "🏅 High-Impact Paper in Aerospace Information Technology Journals",
         },
         "award2": {
-            "zh": "中国图象图形学报 2020-2024 优秀论文",
-            "en": "Journal of Image and Graphics 2020-2024 Excellent Paper",
+            "zh": "🏅 中国图象图形学报 2020-2024 优秀论文",
+            "en": "🏅 Journal of Image and Graphics 2020-2024 Excellent Paper",
         },
         "award": {
-            "zh": "中国图象图形学报 2024 年度优秀论文",
-            "en": "Journal of Image and Graphics 2024 Excellent Paper",
+            "zh": "🏅 中国图象图形学报 2024 年度优秀论文",
+            "en": "🏅 Journal of Image and Graphics 2024 Excellent Paper",
         },
     },
 }
@@ -467,11 +467,11 @@ def tag_label(tag, lang, pub=None):
     if pub and pub["id"] in CUSTOM_TAG_LABELS and tag in CUSTOM_TAG_LABELS[pub["id"]]:
         return CUSTOM_TAG_LABELS[pub["id"]][tag][lang]
     labels = {
-        "hot": {"zh": "ESI 热点论文", "en": "ESI Hot Paper"},
-        "cited": {"zh": "ESI 高被引论文", "en": "ESI Highly Cited Paper"},
-        "award": {"zh": "最佳论文奖", "en": "Best Paper Award"},
-        "award2": {"zh": "2020-2024 优秀论文", "en": "2020-2024 Excellent Paper"},
-        "note": {"zh": "高影响力论文", "en": "High-Impact Paper"},
+        "hot": {"zh": "🔥 ESI 热点论文", "en": "🔥 ESI Hot Paper"},
+        "cited": {"zh": "🏆 ESI 高被引论文", "en": "🏆 ESI Highly Cited Paper"},
+        "award": {"zh": "🏅 最佳论文奖", "en": "🏅 Best Paper Award"},
+        "award2": {"zh": "🏅 2020-2024 优秀论文", "en": "🏅 2020-2024 Excellent Paper"},
+        "note": {"zh": "🏅 高影响力论文", "en": "🏅 High-Impact Paper"},
     }
     return labels[tag][lang]
 
@@ -487,7 +487,7 @@ def pub_item(pub, lang, compact=False):
     if "summary" in pub:
         summary = f'            <p class="pub-summary">{escape(pub["summary"][lang])}</p>\n'
     citation_count = pub.get("home_citations", pub["citations"]) if compact else pub["citations"]
-    citation_label = f"引用 {citation_count}" if lang == "zh" else f"Citations {citation_count}"
+    citation_label = f"Google Scholar · {citation_count} 引用" if lang == "zh" else f"Google Scholar · {citation_count} citations"
     tag_html = [f'<span class="badge-citation">{escape(citation_label)}</span>']
     for tag in pub.get("tags", []):
         tag_html.append(f'<span class="badge-{tag if tag != "award2" else "award"}">{escape(tag_label(tag, lang, pub))}</span>')
@@ -539,7 +539,7 @@ def page_home(lang):
         chips = ["多源融合感知", "图像融合", "图像复原", "语义感知"]
         actions = [("谷歌学术", "https://scholar.google.com/citations?user=PyRqpAsAAAAJ&hl=zh-CN", "btn"), ("GitHub", "https://github.com/Linfeng-Tang", "btn-blue"), ("论文列表", "./publications.html", "btn-gold")]
         highlights_title = "亮点"
-        highlights = ["World's Top 2% Scientists, 2025", "NeurIPS 2025 口头报告", "Information Fusion 2024 年度唯一最佳论文奖", "中国图象图形学报 2024 年度优秀论文，2024", "中国图象图形学报 2020-2024 优秀论文，2025", "IEEE/CAA JAS 钱学森论文奖，2023", "6 篇 ESI 热点论文", "8 篇 ESI 高被引论文"]
+        highlights = ["World's Top 2% Scientists, 2025", "NeurIPS 2025 口头报告", "Information Fusion 2024 年度唯一最佳论文奖", "中国图象图形学报 2024 年度优秀论文，2024", "中国图象图形学报 2020-2024 优秀论文，2025", "IEEE/CAA JAS 钱学森论文奖，2023", "🔥 6 篇 ESI 热点论文", "🏆 8 篇 ESI 高被引论文"]
         research_title = "研究方向"
         focus = [
             ("多模图像融合", "面向红外-可见光图像融合、视频融合、可控融合、配准-融合联合建模，以及通用图像融合。"),
@@ -562,7 +562,7 @@ def page_home(lang):
         chips = ["Multi-source Fusion Perception", "Image Fusion", "Image Restoration", "Semantic Perception"]
         actions = [("Google Scholar", "https://scholar.google.com/citations?user=PyRqpAsAAAAJ&hl=zh-CN", "btn"), ("GitHub", "https://github.com/Linfeng-Tang", "btn-blue"), ("Publications", "./publications.html", "btn-gold")]
         highlights_title = "Highlights"
-        highlights = ["World's Top 2% Scientists, 2025", "NeurIPS 2025 Oral", "Information Fusion 2024 Sole Best Paper Award", "Journal of Image and Graphics 2024 Excellent Paper, 2024", "Journal of Image and Graphics 2020-2024 Excellent Paper, 2025", "Hsue-shen Tsien Paper Award, 2023", "6 ESI Hot Papers", "8 ESI Highly Cited Papers"]
+        highlights = ["World's Top 2% Scientists, 2025", "NeurIPS 2025 Oral", "Information Fusion 2024 Sole Best Paper Award", "Journal of Image and Graphics 2024 Excellent Paper, 2024", "Journal of Image and Graphics 2020-2024 Excellent Paper, 2025", "Hsue-shen Tsien Paper Award, 2023", "🔥 6 ESI Hot Papers", "🏆 8 ESI Highly Cited Papers"]
         research_title = "Research Focus"
         focus = [
             ("Multi-modal Image Fusion", "Infrared-visible image fusion, video fusion, controllable fusion, registration-fusion joint modeling, and general image fusion."),
