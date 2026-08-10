@@ -600,16 +600,16 @@ def page_home(lang):
         <div class="portrait-column">
           <img class="portrait" src="{asset('assets/img/prof_pic_color.png', lang)}" alt="{escape('唐霖峰照片' if lang == 'zh' else 'Portrait of Linfeng Tang')}">
           <div class="portrait-affiliation">{aff_html}</div>
+          <div class="stats scholar-photo-stats" aria-label="Google Scholar statistics">
+            <a class="stat" href="https://scholar.google.com/citations?user=PyRqpAsAAAAJ&amp;hl=en" target="_blank" rel="noreferrer"><strong data-scholar-citations>8,311</strong><span>{escape(scholar_labels[0])}</span></a>
+            <div class="stat"><strong data-scholar-hindex>22</strong><span>{escape(scholar_labels[1])}</span></div>
+          </div>
         </div>
         <div>
           <h1>{escape(h1)}</h1>
           {en_name}
           <div class="subtitle">{escape(subtitle)}</div>
           <p class="summary">{escape(summary)}</p>
-          <div class="stats" aria-label="Google Scholar statistics">
-            <a class="stat" href="https://scholar.google.com/citations?user=PyRqpAsAAAAJ&amp;hl=en" target="_blank" rel="noreferrer"><strong data-scholar-citations>8,311</strong><span>{escape(scholar_labels[0])}</span></a>
-            <div class="stat"><strong data-scholar-hindex>22</strong><span>{escape(scholar_labels[1])}</span></div>
-          </div>
           <script src="{asset('assets/js/scholar-stats.js', lang)}"></script>
           <div class="actions">{action_html}</div>
         </div>
