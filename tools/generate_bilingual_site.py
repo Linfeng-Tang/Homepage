@@ -575,10 +575,10 @@ def page_home(lang):
         footer_text = "English academic homepage."
     if lang == "zh":
         summary = summary.split("谷歌学术引用")[0] + "引用指标见下方自动更新的 Google Scholar 数据。"
-        scholar_labels = ("Google Scholar 总引用", "H 指数", "i10 指数")
+        scholar_labels = ("Google Scholar 总引用", "H 指数")
     else:
         summary = summary.split("My Google Scholar profile has")[0] + "Google Scholar metrics are refreshed automatically below."
-        scholar_labels = ("Google Scholar citations", "h-index", "i10-index")
+        scholar_labels = ("Google Scholar citations", "h-index")
     aff_html = f'<a href="https://robotics.whu.edu.cn/" target="_blank" rel="noreferrer">{escape(aff[0])}</a><a href="https://www.whu.edu.cn/" target="_blank" rel="noreferrer">{escape(aff[1])}</a>' + "".join(f"<span>{escape(x)}</span>" for x in aff[2:])
     chip_html = "".join(f'<span class="chip">{escape(x)}</span>' for x in chips)
     action_parts = []
@@ -609,7 +609,6 @@ def page_home(lang):
           <div class="stats" aria-label="Google Scholar statistics">
             <a class="stat" href="https://scholar.google.com/citations?user=PyRqpAsAAAAJ&amp;hl=en" target="_blank" rel="noreferrer"><strong data-scholar-citations>8,311</strong><span>{escape(scholar_labels[0])}</span></a>
             <div class="stat"><strong data-scholar-hindex>22</strong><span>{escape(scholar_labels[1])}</span></div>
-            <div class="stat"><strong data-scholar-i10index>27</strong><span>{escape(scholar_labels[2])}</span></div>
           </div>
           <script src="{asset('assets/js/scholar-stats.js', lang)}"></script>
           <div class="actions">{action_html}</div>
