@@ -493,6 +493,17 @@ html[lang="en"] .summary {
   border: 1px solid rgba(33, 27, 25, 0.06);
 }
 
+.stats a.stat {
+  color: inherit;
+  text-decoration: none;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.stats a.stat:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(112, 67, 67, 0.12);
+}
+
 .stats strong {
   display: block;
   color: var(--accent);
